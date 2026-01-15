@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #F5FBE6;
+    font-family: 'poppins';
+    margin: 0%;
+}
+
+main {
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    margin-left: 350px;
+    background-color: #EDEDCE;
+    border-radius: 10px;
+}
+
+.container, .container-1 {
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-left: 9px;
+    align-items: center;
+
+}
+
+.container {
+    margin-bottom: 15px;
+}
+
+.js-input, .js-date {
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'poppins';
+}
+
+.js-input:focus, .js-date:focus {
+    outline: none;
+}
+
+.js-date {
+    cursor: pointer;
+} 
+
+.btnAdd {
+    border: none;
+    cursor: pointer;
+    background-color: #3d859b;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'poppins';
+    color: white;
+}
+
+.btnDelete {
+    border: none;
+    cursor: pointer;
+    background-color: #c44c6a;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'poppins';
+    color: white;
+}
+
+.data {
+    color: #454545;
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 34px;
+}
+/*
+    h1::after {
+        content: ' Hello';
+    }
+*/
+
+span {
+    color: brown;
+}
+
+.data-1::before {
+    content: '┈➤ ';
+    color: rgb(167, 167, 167);
+    font-size: 13px;
+}
+
+.cat-gif {
+    width: 120px;
+}
+.cat-gif-2 {
+    width: 120px;
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+}
+
+/*HIDDEN POP UP*/
+
+.main-popup {
+ display: none;
+} 
+.popup {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop-img {
+    width: 240px;
+}
+
+.show {
+    display: block;
+}

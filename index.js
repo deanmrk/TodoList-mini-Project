@@ -1,9 +1,4 @@
-const taskList = [
-    {
-        task: 'Do projects',
-        date: '2026-01-15'
-    }
-];
+const taskList = JSON.parse(localStorage.getItem('data')) || [];
 
 renderText();
 
@@ -13,8 +8,8 @@ function textFunction() {
     const popup = document.querySelector('.main-popup');
     const audio = document.querySelector('.audio');
 
-    task = input.value;
-    date = dueDate.value;
+    const task = input.value;
+    const date = dueDate.value;
 
     if (!task || !date) {
         popup.classList.add('show')
@@ -30,6 +25,8 @@ function textFunction() {
     
     input.value = '';
     dueDate.value = '';
+
+    localStorage.setItem('data', JSON.stringify(taskList));
 }
 
 function renderText() {
